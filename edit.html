@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stylish Shopping App</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__arr">
+					<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M4.42725 12.7857H20.0522" stroke="#1D1E20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M10.7288 19.0611L4.42676 12.7861L10.7288 6.51009" stroke="#1D1E20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>					
+				</a>
+				<div class="header__title">
+					Редактировать
+				</div>
+				<a href="#" class="header__cart null">
+				</a>
+			</div>
+		</header>
+		<div class="review-form">
+			<div class="review-form__container">
+
+				<div class="edit">
+					<div class="top">
+						<p>
+							Фото
+						</p>
+						<div class="edit__add">
+							<input type="file" accept="image/*" id="addmore">
+							<label for="addmore">Добавить фото</label>
+						</div>
+					</div>
+					<div class="edit-photos">
+						<div class="edit-photos__photo">
+							<img src="img/gallery/1.png" alt="">
+							<b></b>
+						</div>
+						<div class="edit-photos__photo">
+							<img src="img/gallery/2.png" alt="">
+							<b></b>
+						</div>
+						<div class="edit-photos__photo">
+							<img src="img/gallery/3.png" alt="">
+							<b></b>
+						</div>
+						<div class="edit-photos__photo">
+							<img src="img/gallery/4.png" alt="">
+							<b></b>
+						</div>		
+						<div class="edit-photos__photo">
+							<img src="img/gallery/5.png" alt="">
+							<b></b>
+						</div>		
+					</div>
+				</div>
+				<div class="review-form__input">
+					<p class="review-form__label">
+						Название*
+					</p>
+					<input type="text" value="Nike Club Fleece" required>
+				</div>
+				<div class="review-form__input">
+					<p class="review-form__label">
+						Цена*
+					</p>
+					<div class="review-form__inpsel">
+						<input type="text" value="20 000" required>
+						<select>
+							<option value="">сум</option>
+							<option value="">y.e.</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="review-form__input">
+					<p class="review-form__label">
+						Старая цена
+					</p>
+					
+					<div class="review-form__inpsel">
+						<input type="text" value="50 000">
+						<select>
+							<option value="">сум</option>
+							<option value="">y.e.</option>
+						</select>
+					</div>
+
+				</div>
+				<div class="review-form__checked">
+					<p>
+						Доставка
+					</p>
+					<input type="checkbox" id="dostavka">
+					<label for="dostavka"><span></span></label>
+				</div>
+				<div class="review-form__checked">
+					<p>
+						Есть ли скидка
+					</p>
+					<input type="checkbox" id="skidka">
+					<label for="skidka"><span></span></label>
+					<div class="review-form__input">
+						<p class="review-form__label">
+							Цена после скидки
+						</p>
+						<input type="text" required>
+					</div>
+				</div>
+				<div class="review-form__input">
+					<p class="review-form__label">
+						Категория*
+					</p>
+					<input type="text" value="Новый" required>
+				</div>
+
+				<div class="review-form__input">
+					<p class="review-form__label">
+						Описание*
+					</p>
+					<textarea required>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt possimus eos nulla aperiam suscipit veniam ipsa modi porro distinctio iste qui quo sint laudantium, et, velit magnam quas? Maiores.</textarea>
+				</div>				
+				<div class="review-form__input">
+					<p class="review-form__label">
+						Доп. информация
+					</p>
+					<textarea value="Describe your experience?">Lorem ipsum dolor</textarea>
+				</div>						
+			</div>
+		</div>
+		<button class="fixed__button">Сохранить</button>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>

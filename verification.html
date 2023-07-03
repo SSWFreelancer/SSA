@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Shopping App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__arr">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.42725 12.7857H20.0522" stroke="#1D1E20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10.7288 19.0611L4.42676 12.7861L10.7288 6.51009" stroke="#1D1E20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>          
+        </a>
+        <div class="header__title">
+          Регистрация
+        </div>
+        <a href="#" class="header__cart null">
+        </a>
+      </div>
+    </header>
+    <form method="POST" action="">
+      <div class="review-form">
+        <div class="review-form__container">
+          <center class="review-form__label">
+            Выберите тип регистрации
+          </center>
+          <div class="addproduct-seller">
+            <div class="seller__top verification-top">
+              <a href="#" data-tab="entity" class="seller__sel active">Юр. Лицо</a>
+              <a href="#" data-tab="individual" class="seller__sel">Физ. Лицо</a>
+            </div>
+            <div class="addproduct-seller__retail target" data-content="entity">
+              <div class="review-form">
+                <div class="review-form__container" style="padding:0;">
+                  <div class="review-form__input">
+                    <p class="review-form__label">
+                      Название организации
+                    </p>
+                    <input type="text" required>
+                  </div>
+                  <div class="review-form__input">
+                    <p class="review-form__label">
+                      ИНН организации
+                    </p>
+                    <input type="number" required>
+                  </div>
+                  <div class="review-form__input">
+                    <p class="review-form__label">
+                      Введите юридический адрес организации
+                    </p>
+                    <input type="text" required>
+                  </div>
+                  <div class="review-form__checked verification-form__checked">
+                    <p>
+                      Фактический адрес совпадает с юридическим
+                    </p>
+                    <input checked type="checkbox" id="address">
+                    <label for="address"><span></span></label>
+                    <div class="review-form__input">
+                      <p class="review-form__label">
+                        Введите фактический адрес организации 
+                      </p>
+                      <input type="text" required="" disabled="">
+                    </div>
+                  </div>
+                  <div class="review-form__input">
+                    <p class="review-form__label">
+                      МФО организации
+                    </p>
+                    <input type="number" required>
+                  </div>
+                  <div class="review-form__input">
+                    <p class="review-form__label">
+                      Рассчетный счет организации
+                    </p>
+                    <input type="number" required>
+                  </div>
+                  <div class="review-form__input">
+                    <p class="review-form__label">
+                      ФИО руководителя
+                    </p>
+                    <input id="nameInput" type="text" required>
+                  </div>
+                  <div class="addproduct-seller">
+                    <div class="seller__top verification-top">
+                      <div data-tab="passport" class="seller__sel active">Паспорт</div>
+                      <div data-tab="idcart" class="seller__sel">ID-карта</div>
+                    </div>
+                    <div class="addproduct-seller__retail target" data-content="passport">
+                      <p class="review-form__label">
+                        Загрузить пасспорт
+                      </p>
+                      <div class="review-form__input">
+                        <input required type="file" accept="image/*" id="passport" class="verificationfile">
+                        <label for="passport" class="verificationlabel">
+                          <span>Выбрать файл</span>
+                          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                            <path id="Vector" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" stroke="#1FD051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                          </svg>
+                        </label>
+                      </div>
+
+                    </div>
+                    <div class="addproduct-seller__retail" data-content="idcart">
+                      <div class="review-form__input">
+                        <p class="review-form__label">
+                          Загрузить ID-карту
+                        </p>
+                        <input required type="file" accept="image/*" id="idcart" class="verificationfile">
+                        <label for="idcart" class="verificationlabel">
+                          <span>Выбрать файл</span>
+                          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                            <path id="Vector" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" stroke="#1FD051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                          </svg>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-form__input">
+                    <p class="review-form__label">
+                      Загрузить cелфи
+                    </p>
+                    <input required type="file" accept="image/*" capture="user" id="selfy" class="verificationfile">
+                    <label for="selfy" class="verificationlabel">
+                      <span>Выбрать файл</span>
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                        <path id="Vector" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" stroke="#1FD051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                      </svg>
+                    </label>
+                  </div>  
+                  <div class="review-form__input">
+                    <p class="review-form__label">
+                      Скан свидетельства о регистрации
+                    </p>
+                    <input required type="file" accept="image/*" capture id="scaner" class="verificationfile">
+                    <label for="scaner" class="verificationlabel">
+                      <span>Выбрать файл</span>
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                        <path id="Vector" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" stroke="#1FD051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                      </svg>
+                    </label>
+                  </div>  
+                  <div class="review-form__input">
+                    <p class="review-form__label">
+                      Скан страницы устава компании с учредителями
+                    </p>
+                    <input required type="file" accept="image/*" capture id="scaner1" class="verificationfile">
+                    <label for="scaner1" class="verificationlabel">
+                      <span>Выбрать файл</span>
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                        <path id="Vector" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" stroke="#1FD051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                      </svg>
+                    </label>
+                  </div>  
+                </div>
+              </div>              
+            </div>   
+            <div class="addproduct-seller__retail" data-content="individual">
+              <div class="review-form">
+                <div class="review-form__container" style="padding:0;">
+                  <div class="review-form__input">
+                    <p class="review-form__label">
+                      Адрес проживания
+                    </p>
+                    <input type="text" required>
+                  </div>
+                  <div class="addproduct-seller">
+                    <div class="seller__top verification-top">
+                      <div data-tab="passport2" class="seller__sel active">Паспорт</div>
+                      <div data-tab="idcart2" class="seller__sel">ID-карта</div>
+                    </div>
+                    <div class="addproduct-seller__retail target" data-content="passport2">
+                      <p class="review-form__label">
+                        Загрузить пасспорт
+                      </p>
+                      <div class="review-form__input">
+                        <input required type="file" accept="image/*" id="passport2" class="verificationfile">
+                        <label for="passport2" class="verificationlabel">
+                          <span>Выбрать файл</span>
+                          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                            <path id="Vector" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" stroke="#1FD051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                          </svg>
+                        </label>
+                      </div>
+
+                    </div>
+                    <div class="addproduct-seller__retail" data-content="idcart2">
+                      <div class="review-form__input">
+                        <p class="review-form__label">
+                          Загрузить ID-карту
+                        </p>
+                        <input required type="file" accept="image/*" id="idcart2" class="verificationfile">
+                        <label for="idcart2" class="verificationlabel">
+                          <span>Выбрать файл</span>
+                          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                            <path id="Vector" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" stroke="#1FD051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                          </svg>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-form__input">
+                    <p class="review-form__label">
+                      Загрузить cелфи
+                    </p>
+                    <input required type="file" accept="image/*" capture="user" id="selfy2" class="verificationfile">
+                    <label for="selfy2" class="verificationlabel">
+                      <span>Выбрать файл</span>
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                        <path id="Vector" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" stroke="#1FD051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                      </svg>
+                    </label>
+                  </div>    
+                </div>
+              </div>              
+            </div>
+          </div> 
+        </div>
+      </div>
+      <button class="fixed__button">Отправить</button>
+    </form>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

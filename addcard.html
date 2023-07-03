@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stylish Shopping App</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__arr">
+					<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M4.42725 12.7857H20.0522" stroke="#1D1E20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M10.7288 19.0611L4.42676 12.7861L10.7288 6.51009" stroke="#1D1E20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>					
+				</a>
+				<div class="header__title">
+					Add New Card
+				</div>
+				<a href="#" class="header__cart null">
+				</a>
+			</div>
+		</header>
+		<div class="types">
+			<div class="types__container">
+				<div class="types__card">
+					<input type="radio" name="typecard" id="typecard1" checked>
+					<label for="typecard1"><img src="img/payment/1.png" alt=""></label>
+				</div>
+				<div class="types__card">
+					<input type="radio" name="typecard" id="typecard2">
+					<label for="typecard2"><img src="img/payment/2.png" alt=""></label>
+				</div>
+				<div class="types__card">
+					<input type="radio" name="typecard" id="typecard3">
+					<label for="typecard3"><img src="img/payment/3.png" alt=""></label>
+				</div>
+			</div>
+		</div>
+		<form class="review-form">
+			<div class="review-form__container">
+				<div class="review-form__input">
+					<p class="review-form__label">
+						Card Owner
+					</p>
+					<input type="text" placeholder="Hemendra Mali">
+				</div>
+				<div class="review-form__input">
+					<p class="review-form__label">
+						Card Number
+					</p>
+					<input type="tel" placeholder="5254 7634 8734 7690" id="cardnumber" maxlength="19">
+				</div>
+				<div class="review-form__inputs">
+					<div class="review-form__input">
+						<p class="review-form__label">
+							EXP
+						</p>
+						<input type="tel" placeholder="24/24" maxlength="5" id="expirydate" oninput="this.value = this.value.replace(/[^0-9/]/g, '').replace(/(\..*)\./g, '$1');">
+					</div>
+					<div class="review-form__input">
+						<p class="review-form__label">
+							CVV
+						</p>
+						<input type="tel" placeholder="7763" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+					</div>
+				</div>
+			</div>
+		</form>
+		<button class="fixed__button">Add Card</button>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>

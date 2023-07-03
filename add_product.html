@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stylish Shopping App</title>
+	<link rel="stylesheet" href="css/nouislider.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="https://tg.intop.uz/seller/1/product/add/4580#" class="header__arr">
+					<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M4.42725 12.7857H20.0522" stroke="#1D1E20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+					<path d="M10.7288 19.0611L4.42676 12.7861L10.7288 6.51009" stroke="#1D1E20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</a>
+				<div class="header__title">
+					Добавить
+				</div>
+				<a href="https://tg.intop.uz/seller/1/product/add/4580#" class="header__cart null">
+				</a>
+			</div>
+		</header>
+
+		<form action="#" method="post"  onsubmit="document.querySelector('.loader').classList.add('open');">
+			<div class="review-form">
+				<div class="review-form__container">
+					<!--Фото-->
+					<div class="edit">
+						<div class="top">
+							<p>
+								Фото
+							</p>
+							<div class="edit__add">
+								<input multiple type="file" accept="image/*" id="addmore">
+								<label for="addmore">Добавить фото</label>
+							</div>
+						</div>
+						<div class="edit-photos">
+							<div class="edit-photos__photo">
+								<img src="img/gallery/1.png" alt="">
+								<b></b>
+							</div>
+							<div class="edit-photos__photo">
+								<img src="img/gallery/2.png" alt="">
+								<b></b>
+							</div>							
+						</div>
+
+					</div>
+					<!--Название-->
+					<div class="review-form__input">
+						<p class="review-form__label">
+							Название*
+						</p>
+						<input type="text" readonly="readonly" name="prod_name" value="Redmi Note 12" required="">
+					</div>
+					<!--Цена-->
+					<div class="review-form__input">
+						<p class="review-form__label">
+							Цена
+						</p>
+						<div class="review-form__inpsel">
+							<input type="text" value="0" name="old_price" required="">
+							<select name="currency">
+							
+								<option value="2">сум</option>
+							
+								<option value="1">$</option>
+							
+							</select>
+
+						</div>						
+					</div>
+					<!-- Скидка -->
+					<div class="review-form__checked">
+						<p>
+							Есть ли скидка
+						</p>
+						<input type="checkbox" id="skidka" name="is_discount">
+						<label for="skidka"><span></span></label>
+						<div class="review-form__input">
+							<p class="review-form__label">
+								Цена после скидки
+							</p>
+							<input name="price-after-discount" type="text" value="0">
+						</div>
+					</div>
+					<!--Описание-->
+					<div class="review-form__radios">
+						<div class="review-form__radios-top">
+							<p>
+								Выбор из описаний
+							</p>
+							<div class="review-form__arrows">
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide review-form__radio">
+									<input checked type="radio" id="descr1" name="is_descr">
+									<label for="descr1">
+										<p>
+											Описание1*
+										</p>										
+										<span></span>
+									</label>
+									<textarea required="">Описание не найдено</textarea>
+								</div>
+								<div class="swiper-slide review-form__radio">
+									<input  type="radio" id="descr2" name="is_descr">
+									<label for="descr2">
+										<p>
+											Описание2*
+										</p>										
+										<span></span>
+									</label>
+									<textarea required="">Описание не найдено</textarea>
+								</div>	
+								<div class="swiper-slide review-form__radio">
+									<input  type="radio" id="descr3" name="is_descr">
+									<label for="descr3">
+										<p>
+											Описание3*
+										</p>										
+										<span></span>
+									</label>
+									<textarea required="">Описание не найдено</textarea>
+								</div>	
+
+							</div>	
+						</div>	
+						<div class="review-form__addescr">
+							<div class="review-form__input">
+								<p class="review-form__label">
+									Своё описание*
+								</p>
+								<textarea disabled required=""></textarea>
+							</div>		
+							<a class="review-form__addbutton" href="#"><span>Добавить описание</span><span>Вернуться к выбору</span> </a>				
+						</div>
+					</div>	
+
+					<!--Характеристики-->
+					
+						<div class="size__top top">
+							<p>
+								Цвет
+							</p>
+						</div>
+						<div class="size__cards">
+							
+							<div class="size__card">
+								<input type="radio" id="size1" name="size1" value="цвет|128 ГБ" checked="">
+								<label for="size1" style="min-height: 85px;">128 ГБ</label>
+							</div>
+							
+							
+							
+						</div>
+						
+					
+						
+						<div class="size__top top">
+							<p>
+								Встроенная память
+							</p>
+						</div>
+						<div class="size__cards">
+							
+							<div class="size__card">
+								<input type="radio" id="size2" name="size2" value="встроенная память|128 ГБ" checked="">
+								<label for="size2" style="min-height: 85px;">128 ГБ</label>
+							</div>
+							
+							
+							<div class="size__card">
+								<input type="radio" id="size3" name="size2" value="встроенная память|4/128GB" checked="">
+								<label for="size3" style="min-height: 85px;">4/128GB</label>
+							</div>
+							
+							
+							
+						</div>
+						
+					
+
+					<!--Новый или Б\У-->
+					<div class="size__top top">
+							<p>
+								Состояние
+							</p>
+					</div>
+					<div class="size__cards">
+						<div class="size__card">
+							<input type="radio" id="size4" name="size_c" value="1" checked="">
+							<label for="size4" style="min-height: 85px;">Новый</label>
+						</div>
+						
+						<div class="size__card">
+							<input type="radio" id="size5" name="size_c" value="0">
+							<label for="size5" style="min-height: 85px;">БУ</label>
+						</div>
+						
+					</div>
+
+					<!--Количество-->
+					<div class="review-form__inputs">
+						<div class="review-form__input">
+							<p class="review-form__label">
+								Количество
+							</p>
+							<input type="text" value="0" name="amount" required="">
+						</div>
+					</div>
+					<!--Доставка-->
+					<div class="review-form__checked">
+						<p>
+							Доставка
+						</p>
+						<input type="checkbox" id="shipper" name="is_shipping">
+						<label for="shipper"><span></span></label>
+					</div>
+
+					<!--Опт или Розница-->
+					<div class="addproduct-seller">
+						<div class="seller__top">
+							<div data-tab="retail" class="seller__sel active">Розница</div>
+							<div data-tab="wholesale" class="seller__sel disabled">Оптом<a href="#"> Закончите регистрацию </a></div>
+							<div data-tab="installment" class="seller__sel">Рассрочка<a href="#"> Закончите регистрацию </a></div>
+						</div>
+						<div class="addproduct-seller__retail" data-content="wholesale">
+							<!-- 1 -->
+							
+							 <div class="addproduct-whosale">
+								  <div class="review-form__inputs">
+									   <div class="review-form__input">
+											<p class="review-form__label">От</p>
+											<input type="text" placeholder="1" name="wholesale_start0">
+									   </div>
+									   <div class="review-form__input">
+											<p class="review-form__label">До</p>
+											<input type="text" placeholder="10" name="wholesale_end0">
+									   </div>
+								  </div>
+								  <div class="review-form__input">
+									   <p class="review-form__label">Цена за шт.</p>
+									   <input type="text" required="" name="wholesale_price0" disabled="">
+								  </div>
+							 </div>
+							
+							 <div class="addproduct-whosale">
+								  <div class="review-form__inputs">
+									   <div class="review-form__input">
+											<p class="review-form__label">От</p>
+											<input type="text" placeholder="1" name="wholesale_start1">
+									   </div>
+									   <div class="review-form__input">
+											<p class="review-form__label">До</p>
+											<input type="text" placeholder="20" name="wholesale_end1">
+									   </div>
+								  </div>
+								  <div class="review-form__input">
+									   <p class="review-form__label">Цена за шт.</p>
+									   <input type="text" required="" name="wholesale_price1" disabled="">
+								  </div>
+							 </div>
+							
+							 <div class="addproduct-whosale">
+								  <div class="review-form__inputs">
+									   <div class="review-form__input">
+											<p class="review-form__label">От</p>
+											<input type="text" placeholder="1" name="wholesale_start2">
+									   </div>
+									   <div class="review-form__input">
+											<p class="review-form__label">До</p>
+											<input type="text" placeholder="30" name="wholesale_end2">
+									   </div>
+								  </div>
+								  <div class="review-form__input">
+									   <p class="review-form__label">Цена за шт.</p>
+									   <input type="text" required="" name="wholesale_price2" disabled="">
+								  </div>
+							 </div>
+							
+							 <div class="addproduct-whosale">
+								  <div class="review-form__inputs">
+									   <div class="review-form__input">
+											<p class="review-form__label">От</p>
+											<input type="text" placeholder="1" name="wholesale_start3">
+									   </div>
+									   <div class="review-form__input">
+											<p class="review-form__label">До</p>
+											<input type="text" placeholder="40" name="wholesale_end3">
+									   </div>
+								  </div>
+								  <div class="review-form__input">
+									   <p class="review-form__label">Цена за шт.</p>
+									   <input type="text" required="" name="wholesale_price3" disabled="">
+								  </div>
+							 </div>
+							
+							 <div class="addproduct-whosale">
+								  <div class="review-form__inputs">
+									   <div class="review-form__input">
+											<p class="review-form__label">От</p>
+											<input type="text" placeholder="1" name="wholesale_start4">
+									   </div>
+									   <div class="review-form__input">
+											<p class="review-form__label">До</p>
+											<input type="text" placeholder="50" name="wholesale_end4">
+									   </div>
+								  </div>
+								  <div class="review-form__input">
+									   <p class="review-form__label">Цена за шт.</p>
+									   <input type="text" required="" name="wholesale_price4" disabled="">
+								  </div>
+							 </div>
+							
+						</div>
+
+						<div class="addproduct-seller__retail" data-content="installment">
+							<div class="review-form__input">
+								<p class="review-form__label">
+									Срок рассрочки(месяц)
+								</p>
+								<div class="review-form__slider">
+									<p>
+										0
+									</p>
+									<div id="slider-installment" class="ss-uislider">
+									</div>
+									<p>
+										36
+									</p>
+								</div>
+							</div>
+							<div class="review-form__input">
+								<p class="review-form__label">Предоплата</p>
+								<input type="text" required="" name="prepayment" disabled="">
+							</div>
+							<div class="review-form__input">
+								<p class="review-form__label">Переплата</p>
+								<input name="Overpayment-percent" type="text" placeholder="%">
+							</div>
+							<div class="review-form__calc">
+								<p class="review-form__label">Расчет рассрочки</p>
+								<a href="https://tg.intop.uz/seller/1/product/add/4580#">Показать расчет по месяцам</a>
+							</div>
+							<div class="review-form__input">
+								<p class="review-form__label">Сумма рассрочки</p>
+								<input name="Installment-amount" type="text" required="" disabled="">
+							</div>
+							<div class="review-form__input">
+								<p class="review-form__label">Переплата</p>
+								<input name="Overpayment" type="text" required="" disabled="">
+							</div>
+							<div class="review-form__input">
+								<p class="review-form__label">Ежемесячный платеж</p>
+								<input name="Monthly-payment" type="text" required="" disabled="">
+							</div>
+							<div class="review-form__input">
+								<p class="review-form__label">Окончание выплат</p>
+								<input name="End-of-payments" type="text" required="" disabled="">
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="fixed__buttons">
+				<button class="fixed__button" type="submit" name="action" value="save_draft">Сохранить в черновик</button>
+				<button class="fixed__button" type="submit" name="action" value="save">Опубликовать</button>
+			</div>
+		</form>
+		<div class="loader">
+			<div class="loader__content">
+				Подождите, идёт <br>сохранение товара
+				<!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
+				<svg width="80" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg" fill="#1fd051">
+				    <circle cx="15" cy="15" r="15">
+				        <animate attributeName="r" from="15" to="15"
+				                 begin="0s" dur="0.8s"
+				                 values="15;9;15" calcMode="linear"
+				                 repeatCount="indefinite" />
+				        <animate attributeName="fill-opacity" from="1" to="1"
+				                 begin="0s" dur="0.8s"
+				                 values="1;.5;1" calcMode="linear"
+				                 repeatCount="indefinite" />
+				    </circle>
+				    <circle cx="60" cy="15" r="9" fill-opacity="0.3">
+				        <animate attributeName="r" from="9" to="9"
+				                 begin="0s" dur="0.8s"
+				                 values="9;15;9" calcMode="linear"
+				                 repeatCount="indefinite" />
+				        <animate attributeName="fill-opacity" from="0.5" to="0.5"
+				                 begin="0s" dur="0.8s"
+				                 values=".5;1;.5" calcMode="linear"
+				                 repeatCount="indefinite" />
+				    </circle>
+				    <circle cx="105" cy="15" r="15">
+				        <animate attributeName="r" from="15" to="15"
+				                 begin="0s" dur="0.8s"
+				                 values="15;9;15" calcMode="linear"
+				                 repeatCount="indefinite" />
+				        <animate attributeName="fill-opacity" from="1" to="1"
+				                 begin="0s" dur="0.8s"
+				                 values="1;.5;1" calcMode="linear"
+				                 repeatCount="indefinite" />
+				    </circle>
+				</svg>
+			</div>
+		</div>
+	</div>
+	<script src="js/nouislider.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>

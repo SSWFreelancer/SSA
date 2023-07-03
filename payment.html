@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stylish Shopping App</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__arr">
+					<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M4.42725 12.7857H20.0522" stroke="#1D1E20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M10.7288 19.0611L4.42676 12.7861L10.7288 6.51009" stroke="#1D1E20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>					
+				</a>
+				<div class="header__title">
+					Payment
+				</div>
+				<a href="#" class="header__cart null">
+				</a>
+			</div>
+		</header>
+		<div class="mycards">
+			<div class="mycards__container">
+				<div class="swiper mycards__swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide mycards__slide">
+							<img src="img/payment/1.svg" alt="">
+							<div class="mycards__card">
+								<div class="mycards__top">
+									<p>
+										Hemendra Mali
+									</p>
+									<img src="img/payment/visa.svg" alt="">
+								</div>
+								<div class="mycards__center">
+									<p>
+										Visa Classic
+									</p>
+									<span>
+										5254 **** **** 7690
+									</span>
+								</div>
+								<div class="mycards__bottom">
+									$3,763.87
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide mycards__slide">
+							<img src="img/payment/2.svg" alt="">
+							<div class="mycards__card">
+								<div class="mycards__top">
+									<p>
+										Mrh Raju
+									</p>
+									<img src="img/payment/visa.svg" alt="">
+								</div>
+								<div class="mycards__center">
+									<p>
+										Visa Classic
+									</p>
+									<span>
+										5254 **** **** 7690
+									</span>
+								</div>
+								<div class="mycards__bottom">
+									$3,763.87
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="addcard.html" class="mycards__btn">
+					<img src="img/payment/Plus.svg" alt="">
+					Add new card
+				</a>
+			</div>
+		</div>
+		<form class="review-form">
+			<div class="review-form__container">
+				<div class="review-form__input">
+					<p class="review-form__label">
+						Card Owner
+					</p>
+					<input type="text" placeholder="Hemendra Mali">
+				</div>
+				<div class="review-form__input">
+					<p class="review-form__label">
+						Card Number
+					</p>
+					<input type="tel" placeholder="5254 7634 8734 7690" id="cardnumber" maxlength="19">
+				</div>
+				<div class="review-form__inputs">
+					<div class="review-form__input">
+						<p class="review-form__label">
+							EXP
+						</p>
+						<input type="tel" placeholder="24/24" maxlength="5" id="expirydate" oninput="this.value = this.value.replace(/[^0-9/]/g, '').replace(/(\..*)\./g, '$1');">
+					</div>
+					<div class="review-form__input">
+						<p class="review-form__label">
+							CVV
+						</p>
+						<input type="tel" placeholder="7763" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+					</div>
+				</div>
+				<div class="review-form__save">
+					<p>
+						Save card info
+					</p>
+					<div class="review-form__checkbox">
+						<input type="checkbox" id="form__save" checked>
+						<label for="form__save">
+							<span></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</form>
+		<button class="fixed__button">Save Card</button>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

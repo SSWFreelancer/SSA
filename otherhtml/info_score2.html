@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stylish Shopping App</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="score">
+        <div class="score__container">
+            <div class="score__title">
+                Тип отчёта: Info Score
+            </div>
+            <div class="score__block"> 
+                <div class="score__top">
+                    СУБЪЕКТ КРЕДИТНОЙ ИНФОРМАЦИИ
+                </div>
+                <div class="score__content">
+                    <div class="score__image">
+                        <img src="data:image/jpg;base64,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" alt="">
+                    </div>
+                    <div class="score__list">
+                        <div>
+                            <span>Код юридического статуса:</span> 2
+                        </div>
+                        <div>
+                            <span>Наименование или ФИО:</span> KOTENKOV ROMAN ROMANOVICH
+                        </div>
+                        
+                        <div>
+                            <span>Пол:</span> M
+                        </div>
+                        <div>
+                            <span>ПИНФЛ:</span> 30709880270031
+                        </div>
+                        <div>
+                            <span>Дата рождения:</span> 1988-09-07
+                        </div>
+                        
+                        <div>
+                            <span>Область прописки/регистрации:</span> 26
+                        </div>
+                        
+                        <div>
+                            <span>Код района прописки/регистрации:</span> 201
+                        </div>
+                        <div>
+                            <span>Почтовый адрес прописки:</span>г. Ташкент, Мирзо Улугбекский район, ул. Интизор, туп. 3, Шукур Бурхонов МСГ, 10а- Дом
+                        </div>
+                        <div>
+                            <span>Дата обновления адреса прописки:</span> 2023-05-11
+                        </div>
+                        <div>
+                            <span>Дата обновления адреса проживания:</span>2023-05-11
+                        </div>
+                        <div>
+                            <span>Электронная почта:</span> н/д
+                        </div>
+                        <div>
+                            <span>Дата обновления электронной почты:</span> 2023-05-11
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+            <div class="score__block">
+                <div class="score__top">
+                    Scoring CIAC
+                </div>
+                <div class="score__list">
+                    <div>
+                        <span>Скоринговый балл заёмщика:</span> 352
+                    </div>
+                    <div>
+                        <span>Класс оценки:</span> B2
+                    </div>
+                    <div>
+                        <span>Уровень оценки:</span> ХОРОШИЙ
+                    </div>
+                    <div>
+                        <span>Версия скоринга:</span> 1.4
+                    </div>
+                </div>
+            </div>
+            <div class="score__block">
+                <div class="score__top">
+                    Общий обзор
+                </div>
+                <div class="score__list">
+                    
+                    <div>
+                        <span>Количество заявок:</span> 54
+                    </div>
+                    <div>
+                        <span>Количество договоров:</span> 1
+                    </div>
+                    <div>
+                        <span>Количество условных обязательств:</span> 0
+                    </div>
+                    <div>
+                       <span> Общая сумма среднемесячного платежа:</span> 0
+                    </div>
+                    <div>
+                        <span>Количество просрочек основного долга(ОД):</span> 0
+                    </div>
+                    <div>
+                        <span>Максимальная просрочка основного долга (дни):</span> 0
+                    </div>
+                    <div>
+                        <span>Сумма максимальной просрочки ОД:</span> 0
+                    </div>
+                    <div>
+                        <span>Максимальная непрерывная просрочка %(дни):</span> 0
+                    </div>
+                    <div>
+                        <span>Общая сумма % вышедших на просрочку:</span> 0
+                    </div> 
+                    <div>
+                        <span>Общая сумма среднемесячного дохода:</span> 
+                    </div>
+                </div>
+            </div>
+            <div class="score__block">
+                <div class="score__top">
+                    Действующие кредитные договоры
+                </div>
+                <div class="score__list">
+                </div>
+            </div>
+
+            <div class="score__block">
+                <div class="score__top">
+                    Заявки без договоров
+                </div>
+                <div class="score__table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Код организации:
+                                </th>
+                                <th>Код филиала организации:</th>
+                                <th>Наименование организации:</th>
+                                <th>Уникальный номер заявки:</th>
+                                <th>Дата заявки:</th>
+                                <th> Код валюты:</th>
+                                <th>Сумма заявки (запроса): </th>
+                                <th>Код причины отклонения: </th>
+                                <th>Дата отклонения: </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>   
+                                <td>
+                                    009
+                                </td>
+                                <td>01037</td>
+                                <td>ТОШКЕНТ Ш., АТБ "КИШЛОК КУРИЛИШ БАНК" БОШ АМАЛИЁТЛАР БОШКАРМАСИ</td>
+                                <td>1351029</td>
+                                <td>2022-08-07</td>
+                                <td>н\д</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>   
+                                <td>
+                                    009
+                                </td>
+                                <td>01037</td>
+                                <td>ТОШКЕНТ Ш., АТБ "КИШЛОК КУРИЛИШ БАНК" БОШ АМАЛИЁТЛАР БОШКАРМАСИ</td>
+                                <td>1351029</td>
+                                <td>2022-08-07</td>
+                                <td>н\д</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="score__block">
+                <div class="score__top">
+                    Договоры
+                </div>
+                <div class="score__list">
+                    <div>
+                        <span>Код организации:</span> 062
+                    </div>
+                    
+                    <div>
+                        <span>Код филиала организации:</span> 01180
+                    </div>
+                    
+                    <div>
+                        <span>Наименование организации:</span> ТОШКЕНТ Ш., "TBC BANK" АКЦИЯДОРЛИК ТИЖОРАТ БАНКИ
+                    </div>
+                    
+                    <div>
+                        <span>Тип организации:</span> БАНК
+                    </div>
+                    
+                    <div>
+                        <span> Статус договора:</span> 2
+                    </div>
+                    
+                    <div>
+                        <span>Номер договора:</span> 5859051
+                    </div>
+                </div>
+            </div>
+            <div class="score__block">
+                <div class="score__top">         
+                     Обеспечения 
+                </div>
+                <div class="score__list">
+                </div>
+            </div>
+            <div class="score__block">
+                <div class="score__top">                
+                    Прогнозный график платежей
+                </div>
+                <div class="score__list">
+                </div>
+            </div>
+            <div class="score__block">
+                <div class="score__top">                       
+                    Фактические погашения  
+                </div>
+                <div class="score__list">
+                </div>
+            </div>
+            <div class="score__block">
+                <div class="score__top">                  
+                    Просроченные платежи основного долгa   
+                </div>
+                <div class="score__list">
+                </div>
+            </div>
+            <div class="score__block">
+                <div class="score__top">
+                    Условные обязательства
+                </div> 
+                <div class="score__list"> 
+                    <div>
+                        <span>Код типа субъекта: </span>
+                    </div>
+                    <div>
+                        <span>Код организации: </span>
+                    </div>
+                    <div>
+                        <span>Код филиала организации: </span>
+                    </div>
+                    <div>
+                        <span>Наименование организации:</span> 
+                    </div>
+                    <div>
+                        <span>Статус договора: </span>
+                    </div>
+                    <div>
+                        <span>Номер договора: </span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="score__block">
+                <div class="score__top">
+                    ЗАПРОСЫ ПО СУБЪЕКТУ КРЕДИТНОЙ ИНФОРМАЦИИ
+                </div>
+                <div class="score__table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Код организации:
+                                </th>
+                                <th>Код филиала организации:</th>
+                                <th>Наименование организации:</th>
+                                <th>Наименование пользователя:</th>
+                                <th>Дата и время запроса:</th>
+                                <th>Тип отчёта:</th>
+                                <th>Номер документа согласия заёмщика:</th>
+                                <th>Дата документа согласия заёмщика на получение кредитной истории:</th>
+                                <th>Дата включения в чёрный список: </th>
+                                <th>Дата исключения из чёрного списка: </th>
+                                <th>Дата заявки: </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>   
+                                <td>
+                                    RET
+                                </td>
+                                <td>20262</td>
+                                <td>PREMIUM SAAS NETWORKS</td>
+                                <td>System S.S.</td>
+                                <td>2023-05-11 11:23</td>
+                                <td>077</td>
+                                <td>zjurzyhvq</td>
+                                <td>2023-05-11</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>   
+                                <td>
+                                    RET
+                                </td>
+                                <td>20262</td>
+                                <td>PREMIUM SAAS NETWORKS</td>
+                                <td>System S.S.</td>
+                                <td>2023-05-11 11:23</td>
+                                <td>077</td>
+                                <td>zjurzyhvq</td>
+                                <td>2023-05-11</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>   
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="score__block">
+                <div class="score__top orange">
+                    ПОДПИСКИ НА УВЕДОМЛЕНИЯ ПО СУБЪЕКТУ КРЕДИТНОЙ ИНФОРМАЦИИ
+                </div>
+                <div class="score__list"> 
+                    <div>
+                        <span>Код организации: </span>
+                    </div>
+                    <div>
+                        <span>Период подписки: </span> 
+                    </div>
+                    <div>
+                        <span>Уникальный номер заявки: </span> 
+                    </div>
+                    <div>
+                        <span>Номер документа согласия заёмщика: </span>   
+                    </div>
+                    <div>
+                        <span>Дата документа согласия заёмщика на получение кредитной истории: </span> 
+                    </div>
+                </div>
+            </div>
+            <div class="score__block">
+                <div class="score__top gray">                        
+                    НЕГАТИВНЫЕ СЛУЧАИ  
+                </div>
+                <div class="score__list">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
